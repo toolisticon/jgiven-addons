@@ -1,3 +1,5 @@
+import java.io.FilenameFilter
+
 plugins {
     base
     idea
@@ -43,6 +45,9 @@ publishing {
 }
 
 githubRelease {
+    //val token = getProperty("github.token") as String
+
     setPrerelease(true)
     setOverwrite(true)
+
 }
