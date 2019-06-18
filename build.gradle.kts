@@ -2,21 +2,47 @@ plugins {
     base
     idea
     kotlin("jvm") version Versions.kotlin
+
+    `maven-publish`
+
+    id("com.github.breadmoirai.github-release") version "2.2.9"
 }
+
+group="com.github.jangalinski"
+version="0.1.0-SNAPSHOT"
 
 apply {
     from("${rootProject.rootDir}/gradle/repositories.gradle.kts")
-}
-
-repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
     implementation("com.tngtech.jgiven:jgiven-core:${Versions.jgiven}")
+}
 
+
+
+val sourcesJar by tasks.registering(Jar::class) {
+    classifier = "sources"
+    from(sourceSets.main.get().allSource)
+}
+
+publishing {
+    repositories {
+        maven {
+            url = uri("$buildDir/repo")
+        }
+    }
+    publications {
+        register("mavenJava", MavenPublication::class) {
+            from(components["java"])
+            artifact(sourcesJar.get())
+        }
+    }
+}
+
+githubRelease {
+    setPrerelease(true)
+    setOverwrite(true)
 }
