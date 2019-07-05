@@ -6,11 +6,7 @@ repositories {
   // if not found, search on jcenter
   jcenter()
 
-  maven {
-    setUrl("https://dl.bintray.com/toolisticon/toolisticon")
-  }
+  maven("https://dl.bintray.com/toolisticon/toolisticon")
 
-  maven {
-    setUrl("https://jitpack.io")
-  }
+  maven("https://jitpack.io")
 }

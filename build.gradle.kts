@@ -1,5 +1,3 @@
-import java.io.FilenameFilter
-
 plugins {
     base
     idea
@@ -7,11 +5,11 @@ plugins {
 
     `maven-publish`
 
-    id("com.github.breadmoirai.github-release") version "2.2.9"
+    githubRelease()
 }
 
 group="com.github.jangalinski"
-version="0.2.0"
+version="0.2.1-SNAPSHOT"
 
 apply {
     from("${rootProject.rootDir}/gradle/repositories.gradle.kts")
@@ -45,9 +43,8 @@ publishing {
 }
 
 githubRelease {
-    //val token = getProperty("github.token") as String
-
+    setToken(properties["github.token"] as String)
     setPrerelease(true)
     setOverwrite(true)
-
+    setPrerelease((project.version as String).endsWith("-SNAPSHOT"))
 }
