@@ -9,19 +9,16 @@ plugins {
 }
 
 group="com.github.jangalinski"
-version="0.2.1-SNAPSHOT"
+version="0.3.0"
 
 apply {
     from("${rootProject.rootDir}/gradle/repositories.gradle.kts")
 }
 
 dependencies {
+    api("com.tngtech.jgiven:jgiven-core:${Versions.jgiven}")
     implementation(kotlin("stdlib-jdk8"))
-
-    implementation("com.tngtech.jgiven:jgiven-core:${Versions.jgiven}")
 }
-
-
 
 val sourcesJar by tasks.registering(Jar::class) {
     classifier = "sources"
