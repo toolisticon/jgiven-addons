@@ -1,1 +1,3 @@
-rootProject.name = "jgivenx-kotlin"
+rootProject.name = "jgiven-addons"
+
+include("jgiven-kotlin")
