@@ -19,9 +19,7 @@ val sourcesJar by tasks.registering(Jar::class) {
 
 publishing {
   repositories {
-    maven {
-      url = uri("$buildDir/repo")
-    }
+    maven(uri("$buildDir/repo"))
   }
   publications {
     register("mavenJava", MavenPublication::class) {
@@ -37,4 +35,5 @@ githubRelease {
   setPrerelease(true)
   setOverwrite(true)
   setPrerelease((project.version as String).endsWith("-SNAPSHOT"))
+  //setReleaseAssets(jar.)
 }
