@@ -1,11 +1,9 @@
 plugins {
     base
     idea
-//    kotlin("jvm") version Versions.kotlin apply false
+
     id("nebula.release") version "10.1.2"
-    id("nebula.kotlin") version "1.3.40" apply false
-    id("org.jmailen.kotlinter") version "1.26.0" apply false
-    id("info.solidsoft.pitest") version "1.4.0" apply false
+    id("nebula.kotlin") version Versions.kotlin apply false
 }
 
 allprojects {
