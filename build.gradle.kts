@@ -20,4 +20,3 @@ dependencies {
         archives(it)
     }
 }
-
