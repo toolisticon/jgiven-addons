@@ -1,5 +1,7 @@
 # jgiven-addons
 
+[ ![Download](https://api.bintray.com/packages/toolisticon/maven/jgiven-addons/images/download.svg?version=0.4.0) ](https://bintray.com/toolisticon/maven/jgiven-addons/0.4.0/link)
+
 a kotlin extension for the JVM BDD testing tool [jgiven](http://jgiven.org/)
 
 ## Features
