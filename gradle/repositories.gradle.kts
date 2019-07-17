@@ -1,12 +1,7 @@
 repositories {
-
-  // prefer artifacts from local cache
   mavenLocal()
-
-  // if not found, search on jcenter
   jcenter()
+  mavenCentral()
 
-  maven("https://dl.bintray.com/toolisticon/toolisticon")
-
-  maven("https://jitpack.io")
+  //maven("https://dl.bintray.com/toolisticon/toolisticon")
 }

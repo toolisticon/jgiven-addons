@@ -1,6 +1,4 @@
-# jgivenx-kotlin
-
-[![](https://jitpack.io/v/jangalinski/jgivenx-kotlin.svg)](https://jitpack.io/#jangalinski/jgivenx-kotlin)
+# jgiven-addons
 
 a kotlin extension for the JVM BDD testing tool [jgiven](http://jgiven.org/)
 
