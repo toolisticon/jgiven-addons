@@ -37,4 +37,4 @@ val <X : Stage<X>> Stage<X>.BUT: X get() = but()
 /**
  * Marker annotation for all-open compiler plugin.
  */
-internal annotation class JGivenKotlinStage
+annotation class JGivenKotlinStage
