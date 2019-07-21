@@ -43,16 +43,19 @@ you have to explicitly mark everything you write in a Stage to be `open`.
 Using the `JGivenKotlinStage` annotation and kotlins "all-open" compiler
 plugin, this can be avoided.
 
+```
+plugins {
+  id("org.jetbrains.kotlin.plugin.allopen") version <kotlin_version>
+}
+
+...
+
+allOpen {
+  annotation("io.toolisticon.addons.jgiven.JGivenKotlinStage")
+}
+
+```
+
 ## Hints
 
 This extension might become obsolete once jgiven [supports this officially](https://github.com/TNG/JGiven/pull/407)
-
-## Usage
-
-This extension is published on jitpack.io, follow [this guide](https://jitpack.io/docs/#building-with-jitpack) to set the repositories in your project, then just use
-
-```
-dependencies {
-  implementation 'com.github.jangalinski:jgivenx-kotlin:<current-version>'
-}
-```
