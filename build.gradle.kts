@@ -9,7 +9,7 @@ plugins {
 
 allprojects {
   group = "io.toolisticon.addons.jgiven"
-  version = "0.5.1-SNAPSHOT"
+  version = "0.5.1"
 
   apply {
     from("${rootProject.rootDir}/gradle/repositories.gradle.kts")
