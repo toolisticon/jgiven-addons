@@ -35,6 +35,32 @@ THEN
   .expect_a_result()
 ```
 
+### Writing Stages
+
+In jgiven-java, you have to do:
+
+```
+class MyStage extends Stage<MyStage> {
+
+  MyStage my_step() {
+     // what the step does
+     return self();
+  }
+}
+```
+
+jgiven-kotlin introduces the inline extension function `step()`, so this can be simplified to:
+
+```
+@JGivenKotlinStage
+class MyStage : Stage<MyStage>() {
+
+  fun `my_step`() = step {
+     // what the step does
+  }
+}
+```
+
 ### JGivenKotlinStage annotation
 
 Since all classes and functions are final by default in kotlin,
