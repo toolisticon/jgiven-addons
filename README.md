@@ -55,7 +55,7 @@ jgiven-kotlin introduces the inline extension function `step()`, so this can be 
 @JGivenKotlinStage
 class MyStage : Stage<MyStage>() {
 
-  fun `my_step`() = step {
+  fun `my step`() = step {
      // what the step does
   }
 }
