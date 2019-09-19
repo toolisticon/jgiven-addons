@@ -3,7 +3,7 @@ import org.gradle.kotlin.dsl.embeddedKotlinVersion
 object Versions {
 
   val kotlin = embeddedKotlinVersion
-  val jgiven = "0.18.1"
+  val jgiven = "0.18.2"
 
   val junit5 = "5.4.2"
 
