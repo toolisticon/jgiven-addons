@@ -2,7 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/toolisticon/jgiven-addons.svg)](https://travis-ci.org/toolisticon/jgiven-addons)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![release](https://img.shields.io/badge/jcenter-0.5.2-BLUE.svg)](https://bintray.com/beta/#/toolisticon/maven/jgiven-addons/)
+[![release](https://img.shields.io/badge/jcenter-0.5.2-BLUE.svg)](https://bintray.com/toolisticon/maven/jgiven-addons/)
 
 a kotlin extension for the JVM BDD testing tool [jgiven](http://jgiven.org/)
 
