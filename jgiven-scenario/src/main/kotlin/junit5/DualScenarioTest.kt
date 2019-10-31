@@ -21,8 +21,8 @@ import org.junit.jupiter.api.extension.ExtendWith
  */
 @ExtendWith(JGivenExtension::class)
 open class DualScenarioTest<GIVEN_WHEN, THEN> : DualScenarioTestBase<GIVEN_WHEN, THEN>() {
-  private val scenario = createScenario()
+  private val internalScenario by lazy { createScenario() }
 
-  override fun getScenario(): Scenario<GIVEN_WHEN, GIVEN_WHEN, THEN> = scenario
+  override fun getScenario(): Scenario<GIVEN_WHEN, GIVEN_WHEN, THEN> = internalScenario
 
 }
