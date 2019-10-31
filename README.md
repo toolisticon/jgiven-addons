@@ -87,3 +87,5 @@ allOpen {
 ## Hints
 
 This extension might become obsolete once jgiven [supports this officially](https://github.com/TNG/JGiven/pull/407)
+
+
