@@ -1,7 +1,9 @@
+import org.gradle.api.JavaVersion
 import org.gradle.kotlin.dsl.embeddedKotlinVersion
 
 object Versions {
 
+  val java = JavaVersion.VERSION_1_8.toString()
   val kotlin = embeddedKotlinVersion
   val jgiven = "0.18.2"
 

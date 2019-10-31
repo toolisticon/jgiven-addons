@@ -20,7 +20,10 @@ tasks {
   dokka {
     outputFormat = "html"
     outputDirectory = "$buildDir/javadoc"
-    moduleName = rootProject.name
+
+    configuration {
+      moduleName = rootProject.name
+    }
   }
 
   publishToMavenLocal {
@@ -29,7 +32,7 @@ tasks {
 
   withType<KotlinCompile> {
     kotlinOptions {
-      jvmTarget = "1.8"
+      jvmTarget = Versions.java
     }
   }
 }

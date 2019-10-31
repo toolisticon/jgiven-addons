@@ -1,3 +1,4 @@
+import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.util.Date
 
@@ -22,7 +23,10 @@ tasks {
   dokka {
     outputFormat = "html"
     outputDirectory = "$buildDir/javadoc"
-    moduleName = rootProject.name
+
+    configuration {
+      moduleName = rootProject.name
+    }
   }
 
   publishToMavenLocal {
