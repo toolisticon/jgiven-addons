@@ -3,7 +3,7 @@ plugins {
   idea
   `build-scan`
 
-  kotlin("jvm") version Versions.kotlin apply false
+  kotlin("jvm") apply false
 }
 
 allprojects {
