@@ -1,8 +1,6 @@
 plugins {
   base
   idea
-  `build-scan`
-
   kotlin("jvm") apply false
 }
 
@@ -18,10 +16,4 @@ dependencies {
   subprojects.forEach {
     archives(it)
   }
-}
-
-buildScan {
-  termsOfServiceUrl = "https://gradle.com/terms-of-service"
-  termsOfServiceAgree = "yes"
-  publishAlways()
 }
