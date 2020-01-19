@@ -15,3 +15,15 @@ dependencies {
   implementation(kotlin("stdlib-jdk8"))
   implementation("org.junit.jupiter:junit-jupiter-api:${Versions.junit5}")
 }
+
+tasks {
+  withType<KotlinCompile> {
+    kotlinOptions {
+      jvmTarget = Versions.java
+    }
+  }
+
+  withType<Test> {
+    useJUnitPlatform()
+  }
+}

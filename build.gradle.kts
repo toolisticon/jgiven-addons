@@ -1,7 +1,6 @@
 plugins {
   base
   idea
-  kotlin("jvm") apply false
 }
 
 allprojects {
