@@ -1,8 +1,9 @@
 # jgiven-addons
 
-[![Build Status](https://api.travis-ci.org/toolisticon/jgiven-addons.svg)](https://travis-ci.org/toolisticon/jgiven-addons)
+**This repository is archived and discontinued.  You find the latest version of jgiven-kotlin, released on maven central, here: https://github.com/toolisticon/jgiven-kotlin**
+
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![release](https://img.shields.io/badge/jcenter-0.6.0-BLUE.svg)](https://bintray.com/toolisticon/maven/jgiven-addons/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.testing/jgiven-kotlin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.testing/jgiven-kotlin)
 
 a kotlin extension for the JVM BDD testing tool [jgiven](http://jgiven.org/)
 
