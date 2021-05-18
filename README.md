@@ -1,6 +1,6 @@
-# jgiven-addons
+# Archived JGiven-addons
 
-**This repository is archived and discontinued.  You find the latest version of jgiven-kotlin, released on maven central, here: https://github.com/toolisticon/jgiven-kotlin**
+**This repository is archived and discontinued. JGiven-Kotlin is still maintained, until it is supported by JGiven. You find the latest version of JGiven-Kotlin, in this github repository: https://github.com/toolisticon/jgiven-kotlin In a meantime there is a version released to Maven Central.**
 
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.testing/jgiven-kotlin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.testing/jgiven-kotlin)
